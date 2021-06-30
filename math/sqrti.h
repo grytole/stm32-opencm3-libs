@@ -1,11 +1,11 @@
-#ifndef __MATH_ISQRT_H__
-#define __MATH_ISQRT_H__
+#ifndef __MATH_SQRTI_H__
+#define __MATH_SQRTI_H__
 
 #include <stdint.h>
 
-uint32_t isqrt(uint32_t x);
+uint32_t sqrti(uint32_t x);
 
-uint32_t isqrt(uint32_t x)
+uint32_t sqrti(uint32_t x)
 {
   uint32_t arg = x;
   uint32_t one = (1 << 30);
@@ -30,4 +30,4 @@ uint32_t isqrt(uint32_t x)
   return res;
 }
 
-#endif /* __MATH_ISQRT_H__ */
+#endif /* __MATH_SQRTI_H__ */

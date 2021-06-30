@@ -1,11 +1,11 @@
-#ifndef __MATH_FSQRT_H__
-#define __MATH_FSQRT_H__
+#ifndef __MATH_SQRTF_H__
+#define __MATH_SQRTF_H__
 
 #include <stdint.h>
 
-float fsqrt(float x);
+float sqrtf(float x);
 
-float fsqrt(float x)
+float sqrtf(float x)
 {
   union {
     int32_t i;
@@ -20,4 +20,4 @@ float fsqrt(float x)
   return u.x;
 }
 
-#endif /* __MATH_FSQRT_H__ */
+#endif /* __MATH_SQRTF_H__ */
